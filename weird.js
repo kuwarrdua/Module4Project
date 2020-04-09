@@ -8,9 +8,9 @@ function useAsynchronous(url) {
         //fetch api uses promises as you can see we are using then blocks
         //also here we specify response type like this where json() is kind of a method 
         return response.json();
-    }).then(function(json) {
+    }).then(function(jso) {
         //passing the json info to jsonObj which is used in next function
-        let jsonObj = json;
+        let jsonObj = jso;
         //calling the weirdDeals functions
         weirdDeals(jsonObj);
         //if there is any error in the steps mentioned above, the catch block will execute
