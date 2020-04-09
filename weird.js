@@ -39,13 +39,12 @@ function weirdDeals(jsonObj) {
         h2.textContent = weirdDeals[i].name;
         p1.textContent = 'Price ' + weirdDeals[i].price;
         p2.textContent = 'Details ' + weirdDeals[i].details;
-        //appending the elements in the body of html document
+        //appending the elements in the section which is in body of html document
         article.appendChild(img);
         article.appendChild(h2);
         article.appendChild(p1);
         article.appendChild(p2);
         section.appendChild(article);
-
     }
 }
 
